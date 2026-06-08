@@ -1,5 +1,5 @@
 .env
-
+application-dev.properties
 HELP.md
 .gradle
 build/
