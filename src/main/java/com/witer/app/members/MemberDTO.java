@@ -8,9 +8,12 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import com.witer.app.notice.NoticeDTO;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
@@ -31,6 +34,8 @@ public class MemberDTO implements UserDetails {
     private String email;
     @Column
     private String name;
+
+    
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
