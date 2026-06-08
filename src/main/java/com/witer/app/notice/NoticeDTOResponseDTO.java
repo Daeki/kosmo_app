@@ -1,6 +1,7 @@
 package com.witer.app.notice;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 public record NoticeDTOResponseDTO(
     Long id,
@@ -8,6 +9,7 @@ public record NoticeDTOResponseDTO(
     String title,
     Long views,
     LocalDateTime createdAt
+    
 ) {
 
     

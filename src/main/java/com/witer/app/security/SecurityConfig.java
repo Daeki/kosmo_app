@@ -35,7 +35,7 @@ public class SecurityConfig {
                 .cors(c -> c.configurationSource(corsConfigurationSource()))
                 .authorizeHttpRequests(a -> {
                     a
-                            .requestMatchers("/notice/add").hasRole("ADMIN")
+                            //.requestMatchers("/notice/add").hasRole("ADMIN")
                             .anyRequest().permitAll();
 
                 })

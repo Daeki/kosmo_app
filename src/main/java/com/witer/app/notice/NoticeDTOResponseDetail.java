@@ -1,23 +1,27 @@
 package com.witer.app.notice;
 
 import java.time.LocalDateTime;
-
+import java.util.List;
 
 public record NoticeDTOResponseDetail(
 
-        Long id,
+                Long id,
 
-        String content,
+                String content,
 
-        LocalDateTime createdAt,
+                LocalDateTime createdAt,
 
-        boolean isPinned,
+                boolean isPinned,
 
-        String title,
+                String title,
 
-        LocalDateTime updatedAt,
+                LocalDateTime updatedAt,
 
-        Long views
+                String username,
+
+                Long views,
+
+                List<NoticeFileDetailDTO> attaches
 
 ) {
 
